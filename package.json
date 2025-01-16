@@ -4,7 +4,7 @@
   "description": "Budget tracking app",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack",
     "start": "webpack-dev-server"
   },
@@ -41,6 +41,7 @@
     "webpack-dev-server": "2.5.1"
   },
   "devDependencies": {
-    "eslint": "^9.17.0"
+    "eslint": "^9.17.0",
+    "jest": "^20.0.4"
   }
 }
