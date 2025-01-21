@@ -8,18 +8,31 @@ import HelpPage from '../components/HelpPage';
 import NotFoundPage from '../components/404';
 
 const AppRouter = () => (
-	<BrowserRouter>
-		<div>
-			<Header />
-			<Switch>
-				<Route path="/" component={ExpenseDashboardPage} exact={true} />
-				<Route path="/create" component={AddExpensePage} />
-				<Route path="/edit/:id" component={EditExpensePage} />
-				<Route path="/help" component={HelpPage} />
-				<Route component={NotFoundPage} />
-			</Switch>
-		</div>
-	</BrowserRouter>
+  <BrowserRouter>
+    <div>
+      <Header />
+      <Switch>
+        <Route
+          path='/'
+          component={ExpenseDashboardPage}
+          exact={true}
+        />
+        <Route
+          path='/create'
+          component={AddExpensePage}
+        />
+        <Route
+          path='/edit/:id'
+          component={EditExpensePage}
+        />
+        <Route
+          path='/help'
+          component={HelpPage}
+        />
+        <Route component={NotFoundPage} />
+      </Switch>
+    </div>
+  </BrowserRouter>
 );
 
 export default AppRouter;
