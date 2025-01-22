@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "jest --config=jest.config.json",
-    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env=prod",
     "start": "webpack-dev-server"
   },
   "keywords": [
@@ -23,10 +24,6 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.4",
-    "enzyme": "2.9.1",
-    "enzyme-to-json": "1.5.1",
-    "jest": "20.0.4",
-    "live-server": "^1.2.0",
     "moment": "2.18.1",
     "node-sass": "4.5.3",
     "normalize.css": "7.0.0",
@@ -47,6 +44,10 @@
     "webpack-dev-server": "2.5.1"
   },
   "devDependencies": {
-    "eslint": "^9.17.0"
+    "eslint": "^9.17.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "enzyme": "2.9.1",
+    "enzyme-to-json": "1.5.1",
+    "jest": "20.0.4"
   }
 }
