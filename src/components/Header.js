@@ -10,7 +10,7 @@ const Header = () => (
           to='/dashboard'>
           <h1>Expensify</h1>
         </Link>
-        <button>Logout</button>
+        <button className='button button--link'>Logout</button>
       </div>
     </div>
   </header>
