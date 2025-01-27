@@ -7,7 +7,7 @@ const Header = () => (
       <div className='header__content'>
         <Link
           className='header__title'
-          to='/dashboard'>
+          to='/'>
           <h1>Expensify</h1>
         </Link>
         <button className='button button--link'>Logout</button>
